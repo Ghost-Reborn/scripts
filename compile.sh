@@ -10,10 +10,8 @@
 compile () {
     . build/envsetup.sh
     lunch arrow_athene-userdebug
-    printf "\n\n\tEnter Threads: "
-    read threads
     clear
-    mka bacon -j$threads
+    mka bacon -j10
 }
 
 printf "\n"
