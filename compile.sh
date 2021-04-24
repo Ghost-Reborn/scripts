@@ -8,11 +8,11 @@
 # Output folder - ~/arrow/out
 
 compile () {
-    clear
     . build/envsetup.sh
     lunch arrow_athene-userdebug
     printf "\n\n\tEnter Threads: "
     read threads
+    clear
     mka bacon -j$threads
 }
 
