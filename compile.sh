@@ -8,6 +8,7 @@
 # Output folder - ~/arrow/out
 
 compile () {
+    clear
     . build/envsetup.sh
     lunch arrow_athene-userdebug
     printf "\n\n\tEnter Threads: "
@@ -18,7 +19,7 @@ compile () {
 printf "\n"
 printf "1. Light Compile \n"
 printf "2. Hard Compile \n"
-printf "2. Clean Compile \n\n"
+printf "3. Clean Compile \n\n"
 printf "Enter choice: "
 read choice
 if [ $choice == 1 ]
